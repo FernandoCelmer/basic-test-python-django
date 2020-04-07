@@ -43,3 +43,16 @@ def about(request):
             'year':datetime.now().year,
         }
     )
+
+def dashboard(request):
+    """Renders the about page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/dashboard.html',
+        {
+            'title':'Dashboard',
+            'message':'Your application description page.',
+            'year':datetime.now().year,
+        }
+    )
