@@ -1,6 +1,19 @@
 ﻿{% extends "app/layout.html" %}
 
 {% block content %}
+
+<body class="hold-transition sidebar-mini  layout-fixed">
+
+  <!-- HEADER -->
+  {% include 'app/layout/header.html' %}
+  <!-- /.HEADER -->
+
+<div class="wrapper">
+
+  <!-- MENU -->
+      {% include 'app/layout/main_menu.html' %} 
+  <!-- /.MENU --> 
+
   <!-- CONTEUDO -->
   <div class="content-wrapper">
     <!-- CONTEUDO_CABECALHO -->
@@ -158,4 +171,23 @@
 
   </div>
 </section>
+        </div>
+  
+  <!-- FOOTER -->
+    {% include 'app/layout/footer.html' %}
+  <!-- /.FOOTER -->
+   
+  <aside class="control-sidebar control-sidebar-dark">
+  </aside>
+  
+</div>
+
 {% endblock %}
+
+
+{% block scripts %}
+
+{% load staticfiles %}
+
+{% endblock %}
+

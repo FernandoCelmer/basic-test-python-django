@@ -6,12 +6,12 @@ from datetime import datetime
 from django.shortcuts import render
 from django.http import HttpRequest
 
-def home(request):
+def dashboard(request):
     """Renders the home page."""
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/index.html',
+        'app/dashboard.html',
         {
             'title':'Home Page',
             'year':datetime.now().year,
@@ -44,14 +44,14 @@ def about(request):
         }
     )
 
-def dashboard(request):
+def login(request):
     """Renders the about page."""
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/dashboard.html',
+        'app/login.html',
         {
-            'title':'Dashboard',
+            'title':'Login',
             'message':'Your application description page.',
             'year':datetime.now().year,
         }

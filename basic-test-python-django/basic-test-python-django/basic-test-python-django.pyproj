@@ -40,7 +40,9 @@
     <Compile Include="app\migrations\__init__.py" />
     <Compile Include="manage.py" />
     <Compile Include="basic_test_python_django\__init__.py" />
-    <Compile Include="basic_test_python_django\settings.py" />
+    <Compile Include="basic_test_python_django\settings.py">
+      <Publish>True</Publish>
+    </Compile>
     <Compile Include="basic_test_python_django\urls.py" />
     <Compile Include="basic_test_python_django\wsgi.py" />
   </ItemGroup>
@@ -410,6 +412,7 @@
     <Content Include="app\templates\app\dashboard.html" />
     <Content Include="app\templates\app\layout\header.html" />
     <Content Include="app\templates\app\layout\footer.html" />
+    <Content Include="app\templates\app\layout\main_menu.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />

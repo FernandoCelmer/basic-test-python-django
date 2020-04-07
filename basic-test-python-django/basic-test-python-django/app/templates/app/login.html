@@ -2,49 +2,54 @@
 
 {% block content %}
 
-<h2>{{ title }}</h2>
-<div class="row">
-    <div class="col-md-8">
-        <section id="loginForm">
-            <form action="." method="post" class="form-horizontal">
-                {% csrf_token %}
-                <h4>Use a local account to log in.</h4>
-                <hr />
-                <div class="form-group">
-                    <label for="id_username" class="col-md-2 control-label">User name</label>
-                    <div class="col-md-10">
-                        {{ form.username }}
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="id_password" class="col-md-2 control-label">Password</label>
-                    <div class="col-md-10">
-                        {{ form.password }}
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-md-offset-2 col-md-10">
-                        <input type="hidden" name="next" value="/" />
-                        <input type="submit" value="Log in" class="btn btn-default" />
-                    </div>
-                </div>
-                {% if form.errors %}
-                <p class="validation-summary-errors">Please enter a correct user name and password.</p>
-                {% endif %}
-            </form>
-        </section>
+<body class="hold-transition login-page">
+<div class="login-box">
+  
+  <div class="login-logo">
+  </div>
+
+  <div class="card">
+    <div class="card-body login-card-body">
+    <h4><p class="login-box-msg">IndexOffy</p></h4>
+
+        <form class="form-signin">
+        <div class="input-group mb-3">
+        <input type="email" id="emailUsuario" name="emailUsuario" class="form-control alert1" placeholder="E-mail">
+          <div class="input-group-append">
+            <div class="input-group-text alert1">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+        <div class="input-group mb-3">
+        <input type="password" id="senhaUsuario" name="senhaUsuario" class="form-control alert2" placeholder="Senha">
+          <div class="input-group-append">
+            <div class="input-group-text alert2">
+              <span class="fas fa-lock"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">  
+          <div class="col-4">      
+          </div>
+        </div>
+      </form>
+      <div class="social-auth-links text-center mb-3">
+        <button id="logar" type="button" class="btn btn-block btn-success">
+          <i class="mr-2"></i> Entrar
+        </a>
+       <button id="cadastrar" type="button" class="btn btn-block btn-default">
+          <i class="mr-2"></i> Cadastrar-se
+        </a>
+      </div>
+        <p class="mb-1">
+      </p>
     </div>
-    <div class="col-md-4">
-        <section id="socialLoginForm"></section>
-    </div>
+  </div>
 </div>
 
 {% endblock %}
 
-
 {% block scripts %}
-
-    {% load staticfiles %}
-<script src="{% static 'app/scripts/jquery.validate.min.js' %}"></script>
 
 {% endblock %}
