@@ -55,4 +55,5 @@ def login(request):
             'message':'Your application description page.',
             'year':datetime.now().year,
         }
+        
     )
