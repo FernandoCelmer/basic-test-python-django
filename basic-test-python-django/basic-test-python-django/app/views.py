@@ -57,3 +57,20 @@ def login(request):
         }
         
     )
+
+def usuario(request):
+    """Renders the about page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/dados_usuario.html',
+        {
+            'title':'Usuario',
+            'message':'Your application description page.',
+            'year':datetime.now().year,
+        }
+        
+    )
+
+
+

@@ -413,6 +413,7 @@
     <Content Include="app\templates\app\layout\header.html" />
     <Content Include="app\templates\app\layout\footer.html" />
     <Content Include="app\templates\app\layout\main_menu.html" />
+    <Content Include="app\templates\app\dados_usuario.html" />
     <Content Include="requirements.txt" />
     <Content Include="db.sqlite3" />
     <Content Include="app\static\app\content\bootstrap.css" />
