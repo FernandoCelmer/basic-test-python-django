@@ -1,11 +1,17 @@
 # [basic-test-python-django]
 
-Site: www.fernandocelmer.com
-</br>
-E-mail: email@fernandocelmer.com
+![GitHub last commit](https://img.shields.io/github/last-commit/FernandoCelmer/basic-test-python-django) ![GitHub followers](https://img.shields.io/github/followers/FernandoCelmer?label=Fernando%20Celmer&style=social)
 
-# Technologies
-Python - https://www.python.org/ <br> 
-Django - https://www.djangoproject.com/ <br> 
- 
+#### Abstract: 
 
+## 🚀 Technologies
+
+- [Python](http://python.org) 
+- [Django](http://djangoproject.com)
+
+## Demo
+
+## Branchs
+
+## SCREEN - ON 
+________________________________
